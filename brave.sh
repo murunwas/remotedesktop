@@ -7,3 +7,6 @@ echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable ma
 sudo apt update
 
 sudo apt install brave-browser
+
+sudo apt install gdebi
+sudo apt install path_to_deb_file
