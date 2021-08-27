@@ -1,5 +1,5 @@
 #! /bin/bash
-printf "Installing google remote desktop Be Patiet... " >&2
+printf "Installing google remote desktop Be Patient... " >&2
 {
 sudo useradd -m CENGY
 sudo adduser CENGY sudo
@@ -18,7 +18,7 @@ sudo systemctl disable lightdm.service
 #sudo dpkg --install google-chrome-stable_current_amd64.deb
 #sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
-sudo adduser CENGY chrome-remote-desktop
+sudo usermod -a -G sudo chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2
