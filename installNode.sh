@@ -8,3 +8,4 @@ nvm install node
 echo "Installing webtorent..."
 npm install webtorrent-cli -g
 echo "complete setup...."
+rm -r installNode.sh
